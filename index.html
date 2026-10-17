@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GreenLeaf Pharmacy — Care You Can Trust</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="logo">
+        <span class="logo-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M11 2a2 2 0 0 0-2 2v5h-5a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2h5v5a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-5h5a2 2 0 0 0 2-2v-2a2 2 0 0 0-2-2h-5V4a2 2 0 0 0-2-2z"/>
+          </svg>
+        </span>
+        <span class="logo-text">GreenLeaf<span class="logo-accent">Pharmacy</span></span>
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="#hero" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#products" class="nav-link">Products</a>
+        <a href="#funfacts" class="nav-link">Fun Facts</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+        <a href="#book" class="nav-cta">Book a Session</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme" title="Toggle theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"/>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/>
+          </svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="container hero-inner">
+      <div class="hero-content reveal">
+        <span class="eyebrow">Trusted since 2009</span>
+        <h1 class="hero-title">Your neighborhood pharmacy, <span class="accent">reimagined.</span></h1>
+        <p class="hero-sub">Expert care, genuine advice, and quality medicine — without the long wait. We put your health first, every single visit.</p>
+        <div class="hero-actions">
+          <a href="#book" class="btn btn-primary">Book a Session</a>
+          <a href="#products" class="btn btn-ghost">Explore Products</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><strong>15+</strong><span>years of service</span></div>
+          <div class="stat"><strong>20k+</strong><span>patients served</span></div>
+          <div class="stat"><strong>4.9★</strong><span>average rating</span></div>
+        </div>
+      </div>
+      <div class="hero-visual reveal" aria-hidden="true">
+        <div class="orb orb-a"></div>
+        <div class="orb orb-b"></div>
+        <div class="hero-card glass">
+          <div class="hero-card-icon">
+            <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M10.5 20.5 10 19l-2-1-2 .5-1.5-1.5.5-2-1-2L2 13v-2l1-1.5L2 8V6l1.5-1L3 3l2-.5L6.5 3l1.5-1h2l1.5 1L13 2.5l1 1.5 2-.5 1.5 1.5-.5 2 1 2 1.5 1.5v2l-1 1.5 1 2V19l-2 .5-2-1-2 1-.5 1.5z"/>
+              <path d="m9 12 2 2 4-4"/>
+            </svg>
+          </div>
+          <div class="hero-card-text">
+            <p class="hero-card-title">Free medication review</p>
+            <p class="hero-card-sub">Book a 20-minute session with our pharmacist.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">About us</span>
+        <h2 class="section-title">Care led by people who listen</h2>
+        <p class="section-sub">We blend modern pharmacy with old-fashioned personal attention.</p>
+      </div>
+
+      <div class="about-grid">
+        <!-- Pharmacist bio -->
+        <article class="bio-card reveal">
+          <div class="bio-photo">
+            <svg viewBox="0 0 64 64" width="100%" height="100%" aria-hidden="true">
+              <circle cx="32" cy="32" r="32" fill="var(--accent-soft)"/>
+              <circle cx="32" cy="26" r="11" fill="var(--accent)"/>
+              <path d="M12 58c0-11 9-18 20-18s20 7 20 18" fill="var(--accent)"/>
+            </svg>
+          </div>
+          <div class="bio-body">
+            <h3 class="bio-name">Dr. Amara Okafor, PharmD</h3>
+            <p class="bio-role">Lead Pharmacist & Founder</p>
+            <p class="bio-text">Amara opened GreenLeaf in 2009 with a simple belief: a pharmacy should feel like a place you're heard, not just processed. With over 15 years of clinical experience and a specialty in chronic-care management, she personally reviews every prescription and makes time for the questions bigger chains rush past.</p>
+            <ul class="bio-creds">
+              <li>Doctor of Pharmacy, University of Lagos</li>
+              <li>Certified Diabetes Care Educator</li>
+              <li>Member, International Pharmacist Association</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Testimonials -->
+        <div class="testimonials">
+          <article class="testimonial reveal">
+            <div class="quote-mark" aria-hidden="true">"</div>
+            <p class="quote">They caught an interaction between two of my prescriptions that a previous pharmacy missed completely. I trust GreenLeaf with my whole family's health.</p>
+            <div class="testimonial-author">
+              <span class="avatar">DO</span>
+              <div><strong>David Okoro</strong><span>Hypertension patient</span></div>
+            </div>
+          </article>
+
+          <article class="testimonial reveal">
+            <div class="quote-mark" aria-hidden="true">"</div>
+            <p class="quote">Dr. Okafor sat with me for half an hour explaining my new diabetes medication. I left actually understanding it instead of feeling scared.</p>
+            <div class="testimonial-author">
+              <span class="avatar">SA</span>
+              <div><strong>Sarah Adeyemi</strong><span>Diabetes care patient</span></div>
+            </div>
+          </article>
+
+          <article class="testimonial reveal">
+            <div class="quote-mark" aria-hidden="true">"</div>
+            <p class="quote">Fast, friendly, and never pushy. They remember my kids by name. This is what a pharmacy should feel like.</p>
+            <div class="testimonial-author">
+              <span class="avatar">MB</span>
+              <div><strong>Mariam Bello</strong><span>Parent of three</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products -->
+  <section class="products" id="products">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">In-store favorites</span>
+        <h2 class="section-title">Popular Products We Sell</h2>
+        <p class="section-sub">A few of what our customers ask for most. Visit us in-store to purchase.</p>
+      </div>
+
+      <div class="product-grid">
+        <article class="product-card reveal">
+          <div class="product-img" style="background:linear-gradient(135deg,#e8f3ec,#cfe6d8);">
+            <svg viewBox="0 0 64 64" width="64" height="64" aria-hidden="true">
+              <rect x="18" y="12" width="28" height="44" rx="4" fill="#7bb98c"/>
+              <rect x="24" y="8" width="16" height="6" rx="2" fill="#5a9a6d"/>
+              <rect x="22" y="28" width="20" height="14" rx="2" fill="#fff" opacity=".85"/>
+              <text x="32" y="39" font-size="9" font-weight="700" fill="#5a9a6d" text-anchor="middle">Ca</text>
+            </svg>
+          </div>
+          <h3 class="product-name">Calcium Supplement</h3>
+          <p class="product-desc">Bone-strengthening calcium with vitamin D3 for better absorption.</p>
+          <span class="product-tag">Immunity & Bone Health</span>
+        </article>
+
+        <article class="product-card reveal">
+          <div class="product-img" style="background:linear-gradient(135deg,#eaf0f7,#cfdcec);">
+            <svg viewBox="0 0 64 64" width="64" height="64" aria-hidden="true">
+              <path d="M20 16c-4 4-6 10-6 18s2 14 6 18h24c4-4 6-10 6-18s-2-14-6-18z" fill="#6b8cce"/>
+              <rect x="26" y="8" width="12" height="8" rx="2" fill="#4f6fa8"/>
+              <path d="M30 30l4 8 4-8z" fill="#fff" opacity=".9"/>
+            </svg>
+          </div>
+          <h3 class="product-name">Whey Protein</h3>
+          <p class="product-desc">High-quality whey protein isolate to support muscle recovery.</p>
+          <span class="product-tag">Fitness & Recovery</span>
+        </article>
+
+        <article class="product-card reveal">
+          <div class="product-img" style="background:linear-gradient(135deg,#f3ece1,#e6d4bd);">
+            <svg viewBox="0 0 64 64" width="64" height="64" aria-hidden="true">
+              <rect x="16" y="18" width="32" height="30" rx="4" fill="#c89b5b"/>
+              <rect x="22" y="12" width="20" height="8" rx="2" fill="#a87a3f"/>
+              <path d="M22 30h20M22 36h14" stroke="#fff" stroke-width="2" opacity=".8"/>
+            </svg>
+          </div>
+          <h3 class="product-name">NaturesField Multivitamin</h3>
+          <p class="product-desc">Daily complete multivitamin with minerals for overall wellness.</p>
+          <span class="product-tag">Daily Wellness</span>
+        </article>
+      </div>
+
+      <p class="products-note reveal">Curious about a specific product? Call us or stop by — we're happy to help you find the right fit.</p>
+    </div>
+  </section>
+
+  <!-- Fun Facts -->
+  <section class="funfacts" id="funfacts">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Did you know?</span>
+        <h2 class="section-title">Fun Facts About Drug Interactions</h2>
+        <p class="section-sub">Small details that make a big difference to how your medicine works.</p>
+      </div>
+
+      <div class="facts-grid">
+        <article class="fact-card reveal">
+          <div class="fact-icon">
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2h8M9 2v6.5L5 18a2 2 0 0 0 2 3h10a2 2 0 0 0 2-3l-4-9.5V2"/><path d="M7 14h10"/></svg>
+          </div>
+          <h3>Grapefruit & statins</h3>
+          <p>Grapefruit juice can block the enzyme that breaks down many statins, causing them to build up in your body to unsafe levels.</p>
+        </article>
+
+        <article class="fact-card reveal">
+          <div class="fact-icon">
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 12h8M12 8v8"/></svg>
+          </div>
+          <h3>Dairy & antibiotics</h3>
+          <p>Calcium in milk can bind to certain antibiotics like tetracycline, making them harder for your body to absorb.</p>
+        </article>
+
+        <article class="fact-card reveal">
+          <div class="fact-icon">
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+          </div>
+          <h3>Leafy greens & warfarin</h3>
+          <p>Vitamin K-rich greens like spinach can reduce the effect of blood thinners. Consistency matters more than avoidance.</p>
+        </article>
+
+        <article class="fact-card reveal">
+          <div class="fact-icon">
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z"/><path d="M6 1v3M10 1v3M14 1v3"/></svg>
+          </div>
+          <h3>Coffee & asthma meds</h3>
+          <p>Caffeine can amplify the stimulant effects of some asthma medications, leading to jitteriness and a faster heart rate.</p>
+        </article>
+
+        <article class="fact-card reveal">
+          <div class="fact-icon">
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          </div>
+          <h3>Taking meds with food</h3>
+          <p>Some drugs need food to absorb properly, while others work best on an empty stomach — timing changes everything.</p>
+        </article>
+
+        <article class="fact-card reveal">
+          <div class="fact-icon">
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 2 7l10 5 10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          </div>
+          <h3>Alcohol & painkillers</h3>
+          <p>Mixing alcohol with acetaminophen or NSAIDs raises the risk of liver and stomach damage — a common, avoidable danger.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Good to know</span>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-sub">Tap a question to reveal the answer.</p>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item reveal">
+          <button class="faq-question" aria-expanded="false">
+            <span>Do I need an appointment to pick up a prescription?</span>
+            <span class="faq-chevron" aria-hidden="true"></span>
+          </button>
+          <div class="faq-answer"><p>No appointment is needed for pickups. However, booking a session is useful if you'd like a detailed consultation about a new prescription.</p></div>
+        </div>
+
+        <div class="faq-item reveal">
+          <button class="faq-question" aria-expanded="false">
+            <span>Do you accept prescription transfers from other pharmacies?</span>
+            <span class="faq-chevron" aria-hidden="true"></span>
+          </button>
+          <div class="faq-answer"><p>Yes. Bring your current prescription bottle or the name of your previous pharmacy, and we'll handle the transfer for you — usually within the same day.</p></div>
+        </div>
+
+        <div class="faq-item reveal">
+          <button class="faq-question" aria-expanded="false">
+            <span>Can I get advice about over-the-counter supplements?</span>
+            <span class="faq-chevron" aria-hidden="true"></span>
+          </button>
+          <div class="faq-answer"><p>Absolutely. Our pharmacist is happy to review any supplements you're considering and check them against your current medications for possible interactions.</p></div>
+        </div>
+
+        <div class="faq-item reveal">
+          <button class="faq-question" aria-expanded="false">
+            <span>What should I do with expired or unused medication?</span>
+            <span class="faq-chevron" aria-hidden="true"></span>
+          </button>
+          <div class="faq-answer"><p>Don't flush or throw them away. Bring them to us and we'll dispose of them safely through our medication take-back program at no charge.</p></div>
+        </div>
+
+        <div class="faq-item reveal">
+          <button class="faq-question" aria-expanded="false">
+            <span>Do you offer medication reviews for chronic conditions?</span>
+            <span class="faq-chevron" aria-hidden="true"></span>
+          </button>
+          <div class="faq-answer"><p>Yes. Book a session and our pharmacist will review all of your medications together, check for interactions, and suggest any adjustments to discuss with your doctor.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Book a Session -->
+  <section class="book" id="book">
+    <div class="container">
+      <div class="book-card reveal">
+        <div class="book-text">
+          <span class="eyebrow">We're here for you</span>
+          <h2 class="section-title">Book a Session</h2>
+          <p>Schedule a one-on-one consultation with our pharmacist for a personalized medication review, supplement guidance, or chronic-care support.</p>
+          <ul class="book-points">
+            <li>20-minute private consultation</li>
+            <li>Full medication-interaction check</li>
+            <li>Clear, jargon-free guidance</li>
+          </ul>
+        </div>
+        <form class="book-form" id="bookForm">
+          <div class="field">
+            <label for="bk-name">Full name</label>
+            <input id="bk-name" name="name" type="text" placeholder="Jane Doe" required />
+          </div>
+          <div class="field">
+            <label for="bk-phone">Phone number</label>
+            <input id="bk-phone" name="phone" type="tel" placeholder="+234 ..." required />
+          </div>
+          <div class="field">
+            <label for="bk-date">Preferred date</label>
+            <input id="bk-date" name="date" type="date" required />
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Request Session</button>
+          <p class="book-confirm" id="bookConfirm" hidden>Thanks! We'll call you within 24 hours to confirm your session.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo-text">GreenLeaf<span class="logo-accent">Pharmacy</span></span>
+        <p>14 Wellness Avenue, Lagos · Open Mon–Sat, 8am–9pm</p>
+      </div>
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#products">Products</a>
+        <a href="#faq">FAQ</a>
+        <a href="#book">Book a Session</a>
+      </div>
+      <p class="footer-copy">© 2026 GreenLeaf Pharmacy. Care you can trust.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
